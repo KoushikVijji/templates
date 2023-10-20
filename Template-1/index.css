@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    position: relative;
+}
+.navbar {
+    background-color: #000000;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+}
+.navbar ul li {
+    float: left;
+}
+.navbar ul #right {
+    float: right;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 94px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.navbar ul li #icon{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    float: right;
+}
+.navbar ul li #icon:hover{
+    background-color: #F44336;
+}
+.navbar ul li a:hover,
+.navbar ul li a:hover .fa-caret-down {
+    background-color: #CCCCCC;
+    color: black !important;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    color: black;
+}
+.dropdown-content .one{
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    height: 38px;
+    line-height: 38px;
+    color: black;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.carousel {
+    width: 100%;
+}
+.slide {
+    display: none;
+    position: relative;
+    text-align: center;
+}
+.slide img {
+    width: 100%;
+}
+.slide.active{
+    display: block;
+}
+.slide h3 {
+    color: white;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 65px;
+    padding: 32px;
+    font-weight: 100;
+    font-size: 22px;
+}
+.slide p {
+    color: white;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    padding: 32px;
+    font-size: 15px;
+}
+#band {
+    padding: 64px;
+
+}
+#band h2 {
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#band #italic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#band #italic i{
+    color: rgb(0,0,0,0.5);
+}
+#band #normal {  
+    text-align: justify;
+    /* width: 785px; */
+    font-size: 15px;
+    line-height: 22.5px;
+    display: block;
+    margin: 0 25%;
+}
+.cards {
+    margin: 30px 25%;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.cards .parts3{
+    width: 33.33%;
+}
+.cards img {
+    width: 153.587px;
+    height: 153.587px;
+    border-radius: 5px;
+}
+.cards .parts3 p {
+    font-size: 15px;
+    margin: 15px 25%;
+}
+
+#tour {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#tour h2 {
+    font-weight: 200;
+    letter-spacing: 5px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#tour p {
+    color: rgb(255,255,255,0.6);
+    font-size: 15px;
+}
+#tour ul {
+    list-style: none;
+    margin: 40px 0;
+}
+#tour ul li {
+    background: #fff;
+    color: rgba(128, 128, 128, 0.984);
+    text-align: left;
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    height: 50px;
+}
+#tour ul li #nov {
+    height: 50px;
+    line-height: 50px;
+}
+#tour hr {
+    width: 55%;
+    margin: 0 auto;
+}
+#tour #text  {
+    display: inline-block;
+    background-color: #f02d26ff;
+    color: white;
+    margin: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+#tour #number {
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #000000;
+    color: white;
+    border-radius: 50px;
+    float: right;
+
+}
+.places {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.places .card {
+    margin: 15px;
+}
+.places .card .img img,
+.places .card .text {
+    width: 245.33px;
+}
+.places .card .img{
+    margin: 0;
+}
+.places .card .img{
+    height: 183.99px;
+}
+.places .card .img img:hover {
+    opacity: 0.7;
+}
+.places .card .text {
+    height: 204.8px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+.places .card .text p {
+    color: black !important;
+    text-align: left;
+    margin: 10px;
+}
+.places .card .text #date {
+    margin-top: 20px;
+    color: rgb(0,0,0,0.7) !important;
+}
+.places .card .text button {
+    height: 38.5px;
+    width: 107.7px;
+    float: left;
+    margin-left: 9px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+.places .card .text button:hover {
+    background-color:  #CCCCCC;
+    color: black;
+}
+#contact {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+#contact .form {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#contact .form .icons {
+    text-align: left;
+    width: 50%;
+    margin-top: 5px;
+}
+#contact .form .icons i{
+    margin-right: 10px;
+}
+#contact .form .icons p{
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#contact h1 {
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+#contact p {
+    color: rgb(0,0,0,0.5);
+}
+#contact .form .inputs {
+    text-align: left;
+    width: 50%;
+}
+#contact .form .inputs input#name,
+#contact .form .inputs input#email{
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+#contact .form .inputs input#name {
+    margin-right: 10px;
+}
+#contact .form .inputs input#msg {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#contact .form .inputs button {
+    height: 38.5px;
+    width: 71.3px;
+    float: right;
+    margin-left: 9px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+#contact .form .inputs button:hover {
+    background-color:  #CCCCCC;
+    color: black;
+}
+.footer {
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    /* line-height: 300px; */
+}
+.footer i{
+    margin: 2px;
+    opacity: 0.5;
+}
+.footer i:hover{
+    opacity: 0.9;
+}
+.footer .ico {
+    margin-top: 100px;
+}
+break{
+    flex-basis: 100%;
+    width: 0px; 
+    height: 0px; 
+    overflow: hidden;
+}
+.footer .link {
+    margin-bottom: 100px;
+    font-size: 14px;
+}
+.footer .link span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.tickets{
+    width: 900px;
+    height: 520px;
+    position: fixed;
+    display: block;
+    top: 100px;
+    left: 309.6px;
+    background-color: white;
+    display: none;
+    z-index: 9999;
+    opacity: 0;
+    animation: animation 0.4s ease forwards;
+}
+.tickets:target{
+    opacity: 1;
+}
+.tickets header {
+    width: 100%;
+    height: 129px;
+    background-color: #009688;
+    /* line-height: 129px; */
+    text-align: center;
+    position: relative;
+}
+.tickets header h1 {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 100;
+    line-height: 129px;
+}
+.tickets header h1 i {
+    margin-right: 20px;
+}
+.tickets header span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    color: white;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.tickets header span:hover {
+    background-color: #CCCCCC;
+}
+.tickets .container {
+    width: 100%;
+    height: 342.5px;
+    padding: 15px;
+}
+.tickets label {
+    font-size: 15px;
+}
+.tickets label i {
+    margin-right: 5px;
+    margin-bottom: 25px;
+}
+.tickets input {
+    padding: 10px;
+    height: 40.1px;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
+.tickets #pay {
+    width: 100%;
+    padding: 20px;
+    background-color: #009688;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 35px;
+    float: left;
+}
+.tickets #pay i {
+    margin-left: 10px;
+    /* color: white; */
+}
+.tickets #pay:hover {
+    background-color: #CCCCCC;
+    color: #000000;
+}
+.tickets #close {
+    width: 83.51px;
+    height: 38.5px;
+    color: white;
+    background-color: #F44336;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.tickets #close i {
+    margin-left: 2px;
+}
+.tickets #close:hover {
+    background-color: #CCCCCC;
+    color: #000000;
+}
+.tickets .link{
+    float: right;
+    height: 38.5px;
+    line-height: 38.5px;
+}
+.tickets .link a{
+    color: rgba(0, 200, 255);
+}
+@keyframes animation {
+    0% {
+        top:-300px;
+        opacity: 0;
+    }
+    100% {
+        top: 100px;
+        opacity: 1;
+    }
+}
+#background-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
